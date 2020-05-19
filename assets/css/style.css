@@ -113,3 +113,46 @@ footer {
 footer h4 {
     font-size: 20px;
 }
+/* —————————— MEDIA QUERIES —————————— */
+@media (max-width: 1079px) {
+    nav {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .content, .benefits {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        float: none;
+    }
+}
+@media screen and (max-width:767px) {
+    .float-left, .float-right {
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+    .search-engine-optimization, .online-reputation-management, .social-media-marketing {
+        height: auto;
+    }
+}
+@media screen and (max-width: 575px) {
+    .hero {
+        height: 600px;
+    }
+    .content, .benefits {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        float: none;
+    }
+    .search-engine-optimization, .online-reputation-management, .social-media-marketing {
+        padding: 30px 30px 40px;
+    }
+    .search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
+        max-height: auto;
+        max-width: 100%;
+    }
+}
