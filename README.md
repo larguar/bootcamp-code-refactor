@@ -54,32 +54,32 @@ THEN I find semantic HTML elements
 Semantic elements clearly describe the meaning to both the browser and the developer. Mark up website content semantically, so that the website is extensible. Valid semantics create content that is reusable and more meaningful to assistive technologies.
 
 Examples of semantic elements include:
-
-* <form>
-* <table>
-* <article>
-* <aside>
-* <details>
-* <figcaption>
-* <figure>
-* <footer>
-* <header>
-* <main>
-* <mark>
-* <nav>
-* <section>
-* <summary>
-* <time>
-
+```
+<form>
+<table>
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+```
 Most current web browsers support the above HTML5 elements and convey the information to assistive technology through the accessibility APIs. However, to maximize compatibility with web browsers and assistive technologies that support WAI-ARIA but do not yet support HTML5, it is currently advisable to use both the HTML5 elements and the corresponding WAI-ARIA roles.
 
 Examples of this include:
-
-* <header role="banner">…</header>
-* <main role="main">…</main>
-* <nav role="navigation">…</nav>
-* <footer role="contentinfo">…</footer>
- 
+```
+<header role="banner">…</header>
+<main role="main">…</main>
+<nav role="navigation">…</nav>
+<footer role="contentinfo">…</footer>
+```
  
  
 ## Heading Tags
@@ -89,9 +89,9 @@ THEN they fall in sequential order
 ```
 Headings communicate the organization of the content on the page. Web browsers, plug-ins, and assistive technologies can use them to provide in-page navigation.
 
-Nest headings by their rank (or level). The most important heading has the rank 1 (<h1>), the least important heading rank 6 (<h6>). Headings with an equal or higher rank start a new section, headings with a lower rank start new subsections that are part of the higher ranked section.
+Nest headings by their rank (or level). The most important heading has the rank 1 (H1), the least important heading rank 6 (H6). Headings with an equal or higher rank start a new section, headings with a lower rank start new subsections that are part of the higher ranked section.
 
-Skipping heading ranks can be confusing and should be avoided where possible: Make sure that a <h2> is not followed directly by an <h4>, for example. It is ok to skip ranks when closing subsections, for instance, a <h2> beginning a new section, can follow an <h4> as it closes the previous section.
+Skipping heading ranks can be confusing and should be avoided where possible: Make sure that an H2 is not followed directly by an H4, for example. It is ok to skip ranks when closing subsections, for instance, a H2 beginning a new section, can follow an H4 as it closes the previous section.
 
 
 
